@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Container version="2">
+   <Name>VERT</Name>
+   <Repository>ghcr.io/vert-sh/vert</Repository>
+   <Registry>https://github.com/vert-sh/vert/pkgs/container/vert</Registry>
+   <Network>bridge</Network>
+   <MyIP />
+   <Shell>sh</Shell>
+   <Privileged>false</Privileged>
+   <Support>https://github.com/VERT-sh/VERT/issues</Support>
+   <Project>https://vert.sh</Project>
+   <Overview>VERT is a free, fast, and awesome file converter. It allows you to convert any image, video, audio, and document file. No ads, no tracking, open source, and all processing (other than video) is done on your device.</Overview>
+   <Category>Tools:Utilities</Category>
+   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+   <TemplateURL />
+   <Icon>https://raw.githubusercontent.com/VERT-sh/VERT/main/static/favicon.png</Icon>
+   <ExtraParams />
+   <PostArgs />
+   <CPUset />
+   <DateInstalled />
+   <DonateText />
+   <DonateLink>https://donations.vert.sh</DonateLink>
+   <Description>VERT is a free, fast, and awesome file converter.</Description>
+   <Networking>
+      <Mode>bridge</Mode>
+      <Publish>
+         <Port>
+            <HostPort>3000</HostPort>
+            <ContainerPort>80</ContainerPort>
+            <Protocol>tcp</Protocol>
+         </Port>
+      </Publish>
+   </Networking>
+   <Data />
+   <Environment />
+   <Config Name="WebUI" Target="80" Default="3000" Mode="tcp" Description="The port to access the VERT web interface." Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+</Container>
